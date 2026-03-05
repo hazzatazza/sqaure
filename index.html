@@ -1,41 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Square Bird - Unblocked</title>
+    <title>Square Bird - Algebra Practise</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            overflow: hidden;
-            height: 100%;
-            width: 100%;
-        }
-        #game-frame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+        html, body { margin: 0; padding: 0; background-color: #000; overflow: hidden; height: 100%; width: 100%; }
+        #game-frame { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
     <iframe id="game-frame" src="game.html" allow="autoplay; fullscreen"></iframe>
-
-    <script type="text/javascript">
-        // Mocking the SDK at the top level to prevent ad-blocker freezes
-        window.GD_OPTIONS = {
-            gameId: "a74d8e178f5e476ebb94d5c61d4d60c3",
-            onEvent: function(event) { console.log("Wrapper Event:", event.name); }
-        };
-        window.gdsdk = {
-            showAd: function() { return Promise.resolve(); },
-            preloadAd: function() { return Promise.resolve(); },
-            init: function() { console.log("SDK Mocked in Wrapper"); }
-        };
-    </script>
 </body>
 </html>
